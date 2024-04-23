@@ -27,3 +27,10 @@ btn.addEventListener("click",function () {
     var cambiarimg = "perfil.png";
     document.getElementById("imagen_actual").setAttribute("src",cambiarimg);
 });
+let bt_cerrar = document.querySelectorAll("#cerrarsesion");
+bt_cerrar.forEach(function(node){
+    console.log(node);
+    node.addEventListener("click",function(){
+        node.parentElement.remove();
+    });
+});
